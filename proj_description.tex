@@ -1,0 +1,502 @@
+\documentclass[12pt]{amsart}
+%\usepackage[a4paper]{geometry}
+\usepackage[margin=0.8in,footskip=0.25in]{geometry}
+%\usepackage[showframe,paper=a4paper,margin=1in]{geometry}
+%showframe,paper=a4paper,margin=1in
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{float}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+   }
+   \usepackage{hyperref}
+     \newcommand{\vdag}{(v)^\dagger}
+    \newcommand{\volt}{{v}}
+    \newcommand{\vis}{{V}}
+    \newcommand{\sky}{{\rm sky}}
+    \newcommand{\bmvolt}{{a}}
+    \newcommand{\beam}{{A}}
+    \newcommand{\thhat}{{\hat\theta}}
+    %\newcommand{\fngexp}{{e^{\frac{2\pi i\nu\vec{b}\cdot\thhat}{c}}}}
+    %\newcommand{\ifngexp}{{e^{-\frac{2\pi i\nu\vec{b}\cdot\thhat}{c}}}}
+    \newcommand{\fngexp}{{e^{2\pi i\nu\vec{b}\cdot\thhat/c}}}
+    \newcommand{\ifngexp}{{e^{-2\pi i\nu\vec{b}\cdot\thhat/c}}}
+    \newcommand{\dfngexp}{{e^{2\pi i\nu \Delta \tau}}}
+    %\newcommand{\myemail}{skywalker@galaxy.far.far.away}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+%\usepackage[]{natbib}
+\usepackage{amssymb}
+
+\usepackage{setspace}  % Needed for Double Spacing
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\title{Project Description - The HYdrogen Probe of the Epoch of REIONization (HYPERION) : An interferometer for precision measurements of the radio background at long wavelengths}
+\begin{document}
+\maketitle
+
+% --------------------------------------------------------------------------
+The HYPERION is a radio interferometer to make a differential measurement of the sky monopole and a ground based thermal emitter between 50-120~MHz for detecting the spectral signatures of the redshifted 21~cm monopole (spatial average) from the primordial neutral hydrogen (HI spin flip radiation). 
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=2.5in]{Figures/Global_212.png}
+ \caption{\small
+An example history of the evolution of the 21~cm monopole signal over cosmic time/redshift. The spin temperature $T_{s}$ evolution %$T_{s}^{-1} = { (T_{\gamma}^{-1}+x_{c} T_{K}^{-1}+ x_{l} T_{l}) \over (1+x_{c}+x_{l})}$ 
+with temperature $T_{cmb}$ of the cosmic microwave background and kinetic temperature $T_{K}$ of the gas was influenced by the astrophysical processed of the early Universe. This shaped the amplitude of the 21~cm signal over cosmic time (green).
+}
+\label{figure1}
+\end{figure}
+The redshifted HI signal is a tracer of the evolution history of first stars, first blackholes and first galaxies and a direct detection will transform our understanding of the astrophysical processes in the early Universe.
+However, exploiting it requires solving one of the greatest challenges of observational cosmology - detecting an extremely weak signal of cosmological origin in presence of a radio continuum background which is at least five orders of magnitude brighter than the cosmological signal (figure \ref{figure2}). 
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=3.5in,width=0.9\linewidth]{Figures/Dynamic_range.png}
+\caption{\small
+Dynamic range of signal detection for redshifted 21~cm monopole measurements - Galactic and extragalactic radio background at low radio frequencies (red, blue) are at least five orders of magnitude brighter than the redshifted 21~cm emission/absorption signal (green). Thermal emission of the moon as well as galactic free free emission results in additive contribution. At these frequencies, any residual sky/receiver noise that is uncalibrated at even $1\%$ level can result in additive contamination that is at least five orders of magnitude larger than the cosmological 21~cm signal.
+}
+\label{figure2}
+\end{figure}
+The hardware requirement of monopole experiments is simple and a detection is possible using a linear dipole antenna over 24 ~hours integration \cite{Shaver99}. But the system engineering and level of precision and
+control over systematic required is incredibly high for a successful detection using a total power radio telescope.
+First generation monopole experiments EDGES \cite{Bowman_Roger2010}), SARAS; \cite{Patra13}, \cite{Patra15b} , SCI-HI (\cite{Voytek2015}) used single element radiometers and produced a wealth of knowledge about the measurement technique and calibration strategy. The nonstandard effects that impact the possibility of a detection are studied in great detail. For example, angular structures of the foreground can be coupled into wideband measurements due to chromatic antenna beam and introduce spectral variation. Uncalibrated receiver or sky noise contribution at $0.1\%$ level can result in residual spectral distortion which is few orders of magnitude brighter than the cosmological signal. 
+
+We take an interferometric approach to measure the redshifted 21~cm monopole background
+
+The instrument constitute of 10 short dipole elements that are ultrawideband and spatially smooth primary beam with nominal spectral variation.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=2.5in]{Figures/Figure1.png}
+ \caption{\small
+HYPERION stage1: An interferometer with a baseline length $< \lambda/2$ with electromagnetic absorbers placed in between. The absorbers work in two ways. First, it reduces the 
+}
+\label{figure3}
+\end{figure}
+
+
+First generation monopole experiments EDGES \cite{Bowman_Roger2010}), SARAS; \cite{Patra13}, \cite{Patra15b} , SCI-HI (\cite{Voytek2015}) produced a wealth of knowledge about the measurement technique and calibration strategy. The nonstandard effects that impact the possibility of a detection is studied in great detail. For example, angular structures of the foreground can be coupled into wideband measurements due to chromatic antenna beam and introduce spectral variation. 
+Preserving the monopole signal structure will require a beam variation as low as $0.04/ MHz$
+ \cite{Mozdzen16}. 
+
+A pathfinder design of a frequency independent short dipole (SARAS antenna,  87.5 to 175~MHz) is presented in \cite{Raghu13}. The scaled optimization of this is adopted for HYPERION array which is also frequency independent between 30 - 120~MHz. Uncalibrated receiver or sky noise contribution at $0.1\%$ level can result in residual spectral distortion which is few orders of magnitude brighter than the cosmological signal. 
+The complexity of calibrating monopole measurements for multiple reflections of the receiver and sky noise internal to the system is presented with unprecedented details in \href{http://link.springer.com/article/10.1007\%2Fs10686-013-9336-3}{Patra et al.2013 \cite{Patra13}}, \href{http://www.worldcat.org/title/precision-measurements-of-the-radio-background-at-long-wavelengths-a-thesis-submitted-for-the-degree-of-doctor-of-philosophy/oclc/918897862}{Patra et al.2015b \cite{Patra15b}} .\cite{Monsalve17} presented the precision calibration methodology developed for the EDGES high band receiver that reduces the system noise contribution to mili kelvin level where the cosmological signal can be detectable. Early observations of EDGES showed that the reionization of the cosmological neutral hydrogen occurred over $\Delta z >0.06$ \cite{Bowman_Roger2010}. 
+
+
+
+
+
+
+
+ Although interferometers are immune to systematic effects, power spectrum measurements are dominated by the foreground at various spatial scales (figure \ref{Fig:3}). 
+The avoidance based foreground removal technique is documented in \cite{Parsons2010} (figure \ref{Fig:3}).
+Multipath effects replicates the sky signal at the delays where foreground power spectrum is expected to be negligible. 
+In a related series of 4 papers the effect of the element chromaticity of a HERA prototype element on the power spectrum measurements using single polarization is studied  \cite{Thyagarajan3, deBoer2016, Ewall16}. Effects of multiple reflections from the feed nearfield on the chromaticity of the single polarization of a prototype HERA element is measured using reflectometry technique in  \href{https://arxiv.org/pdf/1701.03209.pdf}{Patra et al.2017b \cite{Patra17}}. \cite{Moore} has shown the effects of polarization leakage on the power spectrum measurements due to beam asymmetry using the PAPER dipole antenna beam as an example. 
+ The proposed work investigate the effects of the polarization leakage due to multiple reflections in the reflector type antennas and its science impact. All these studies together constitute an exhaustive understanding of the mechanism by which foreground power can contaminate the cosmological 21~cm power spectrum measurement and help improve the design parameters, calibration strategy and data analysis pipeline.
+
+
+
+
+
+
+
+ Although response of interferometers to an isotropic signal integrates to zero when configured conventionally for radio imaging or spatial fluctuation measurements, it can be sensitive to the spatial monopole if a known spatial variation is introduced in the monopole background. (Ref: Harish LOFAR, Shaver et al). We use electromagnetic absorber baffles around individual interferometer elements. Absorber baffles are thermal emitters at ambient temperature that partially covers the antenna beams while creating a artificial discontinuity on the monopole sky and provide a reference temperature which is colder than the sky monopole at the observing frequencies 50-120~MHz. At these frequencies, the redshifted 21~cm signal is expected to have the spectral fluctuation that is cosmologically most significant and 
+
+HYPERION exploits the antenna element design of the ``Shaped Antenna measurements of the background RAdio Spectrum" (SARAS; ) with by further optimization for low frequency performance alongside a custom designed wideband analog receiver system and a digital spectrometer that is realized using the Smart Network ADC Processor (SNAP).   
+
+
+%a total power radio telescope with a single antenna element with an interferometric receiver.
+%While exploiting the element design and the system architecture of the experiment ``Shaped Antenna measurements of the background RAdio Spectrum" (SARAS), a total power radio telescope with a single antenna element with an interferometric receiver. SARAS measurement 
+
+
+%A suitable comparison is the measurement by the FIRAS instrument on COBE satellite.
+%The 
+ 
+%FIRAS measured the CMB spectrum from space with a RMS deviation of $1:10^{5}$  with respect to a Planck blackbody spectrum. This was a space based experiment observing a thermal sky spectrum in the wavelength range of 0.5 to 5~mm with negligible radio frequency interference. The redshifted 21~cm spectral signatures of non-thermal origin are to be detected against a non-thermal background 10000 times stronger after ionospheric modulation.
+
+
+
+ %for a precision measurement of the background monopole spectrum between 50-120~MHz corresponding to the cosmological redshift of $\approx z=12-28$. 
+
+%The sky-averaged redshifted 21cm signal i.e, the spatial monopole is rich in spectral information 
+
+
+ %through the use of specialized single-dish experiments. The single dish is an important, if fraught, design choice as it enables direct sampling of the spatial monopole 21cm signal (i.e. the all-sky average signal).
+
+
+ %The  
+%We propose to develop the BAOBAB array --- an
+%instrument dedicated to characterizing baryon acoustic oscillations
+%(BAO) via the intensity mapping of HI 21cm emission at redshifts
+%$z=0.8$--$2.5$.
+
+
+
+Our proposal is structured as follows: 
+in \S\ref{sec:21cm_bao} we review the motivation, prospects, and methodology for measuring BAO with 21cm emission,
+in \S\ref{sec:instrument} we discuss our technical approach to designing the BAOBAB instrument,
+in \S\ref{sec:analysis} we describe the analysis initiatives that will be undertaken with BAOBAB data,
+%in \S\ref{sec:timeline} we review the activities and project timeline,
+and in \S\ref{sec:broader_impacts} we discuss the broader impacts of our activities.
+
+% ----------------------------------------------------------------
+\vspace{-.2in}
+\section{Intellectual Merit: Measuring the global 21~cm using interferometer}
+\label{sec:int_mer}
+
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[height=2.5in]{Figures/Global_212.png}
+%\caption{\footnotesize{Panel 1: An example history of the neutral hydrogen evolution over cosmic time. The Universe evolves from an initially homogeneous state at redshifts $>100$ to regions of increasing density fluctuations that evolved into first luminous sources and ionize the primordial gas surrounding them by redshift $\approx 6$. The spin temperature $T_{s}$ of the gas %$T_{s}^{-1} = { (T_{\gamma}^{-1}+x_{c} T_{K}^{-1}+ x_{l} T_{l}) \over (1+x_{c}+x_{l})}$ 
+%evolved with the kinetic temperature $T_{K}$ of the gas and the CMB temperature $T_{cmb}$. As a consequence, the differential brightness temperature of the sky averaged redshifted 21~cm signal (monopole) evolved with redshifts and the assumed spectral form as shown in the panel 2. Panel 4: spatial power spectrum of redshifted 21~cm.}}
+%\label{figure2}
+%\end{figure} 
+
+
+
+
+
+%\vspace{-.2in}
+\subsection{Leveraging 21cm Reionization Designs and Techniques}
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[height=2.5in]{Figures/Figure1.png}
+ \caption{\small
+HYPERION stage1: An interferometer with a baseline length $< \lambda/2$ with electromagnetic absorbers placed in between. The absorbers work in two ways. First, it reduces the 
+}
+\label{figure1}
+\end{figure}
+
+%\begin{figure}[tb]\centering
+   % \includegraphics[width=3.0in]{plots/baobab32_sense-2.png} \includegraphics[width=3.0in,trim=0cm 0cm 0cm 0cm,clip=True]{plots/baobab128_sense-2.png}
+    %\caption{\small
+%Left: the power spectrum of 21cm emission illustrating scale and location of
+%BAO features at $z = 0.89$ for bias
+%$b=0.75$ and $f_{\rm{HI}}=0.015$, chosen to match the measurements of \citealt{chang_et_al2010}.  
+%Errors correspond to a 30-day observation in a 100-MHz sub-band with the 35-element 
+%system described in \citet{pober_et_al2012b}.  
+%The first three BAO peaks
+%are centered at $k=0.07$, $0.12$, and $0.18 h\ {\rm Mpc}^{-1}$, respectively,
+%with nominal estimates of $0.007$, $0.013$, and $0.021
+%{\rm mK}^2$ for the respective $\Delta_{21}^2(k)$ amplitudes of these
+%fluctuations.
+%Right:
+%the BAO features isolated from the power spectrum.  Errors correspond to a future, 
+%132-element array described in \citet{pober_et_al2012b} observing 
+%three declination fields for
+%for 180 days each.  This $\sim5\sigma$ BAO detection corresponds to an $\sim3\%$ measurement of $R$, 
+%the distance scale at $z = 0.89$.
+%Combining measurements across a $400-800$~MHz band produces the results
+%in Figure \ref{fig:baobab_tile_fom} and Table \ref{tab:errs}.
+%}
+%\label{fig:bao_pspec}
+%\end{figure}
+
+
+
+
+% here is where I would discuss why the instrument being proposed looks different from what is in the paper
+
+% --------------------------------------------------------------------------
+\vspace{-.2in}
+\section{From single dish to interferometer: Building on SARAS's Technical Legacy}
+\label{sec:instrument}
+
+
+
+\begin{table}[htb]
+\caption{ HYPERION: Instrument specification}
+\begin{tabular}{l|l}
+\hline\hline
+Operating Bandwidth & 30--120 MHz \\
+Number of Elements & 10 \\
+Gain per Element & 1.76 dBi \\
+Field-of-View per element & 1.05 sr \\
+Receiver Noise Temperature & 150 K \\
+%System Temperature & 50 K\\
+%Baseline & 60 m\\
+%Redundant Baseline Scale & 1.6 m\\
+%$k_{\rm min}$, $k_{\rm max}$ & 0.025, 2.5$h\ {\rm Mpc}^{-1}$\\ 
+Array Configuration & Reconfigurable: very short baseline ($<\lambda/2$) (Figure \ref{fig:configuration})\\
+Frequency Resolution & 87.9 kHz\\
+Single spectrum Integration Time & 4 s\\
+Data Volume & 45 GB per night \\
+\hline
+\end{tabular}
+\label{tab:features}
+\end{table}
+
+
+
+%\begin{figure}[!t]\centering
+   % \includegraphics[width=6.0in]{plots/timeline.png}
+    %\caption{\small
+
+%\vspace{-.2in}
+\subsection{Site and Array Configuration}
+
+
+%\begin{figure}[t]\centering
+%\includegraphics[height=2.0in]{plots/cfg_min49.png}\includegraphics[height=2.0in]{plots/cfg_ln7x7.png}
+%\caption{\small
+%BAOBAB array configurations, plotted in meters east-west 
+%(horizontal axis) and north-south (vertical axis).  BAOBAB will use above-ground
+%cabling to allow antennas to be moved into
+%a minimum-redundancy configuration (left) for imaging foregrounds, or
+%a maximum-redundancy configuration (right) for enhanced power-spectrum sensitivity.
+%}
+%\label{fig:configuration}
+%\end{figure}
+
+
+
+
+%\vspace{-.2in}
+\subsection{Analog Signal Path}
+\label{sec:analog_path}
+
+%\begin{figure}[!ht]\centering
+%\includegraphics[width=4.5in]{plots/signal_flow.png}
+%\caption{\small
+%System diagram of the BAOBAB interferometer.  Dual-polarization antenna signals
+%at -103dBm enter an uncooled low-noise amplifier (LNA) with +12.5dB
+%gain and noise figure of 0.4dB (30K).  Second-stage amplifiers add
+%+36dB gain before transmission through 30 meters of LMR400 50$\Omega$ cable to
+%a central enclosure.  The signal is bandpass filtered (400--800MHz) and
+%amplified +40dB to the optimal -22dBm input level for the ADCs.
+%Each antenna signal is digitized and channelized in ROACH F-engines, reordered
+%in transmission through 
+%a 10Gb Ethernet switch, and sent to GTX-590 GPU X-engines
+%for cross-correlation. Visibility data are collected by a host
+%computer and written in the MIRIAD UV file format to RAID storage.
+%}
+%\label{fig:signal_flow}
+%\end{figure}
+
+
+%\begin{figure}[!ht]\centering
+%\includegraphics[width=3.0in]{plots/baobab_tile.jpg}
+%\includegraphics[width=3.0in]{plots/baobab_antenna.jpg}
+%\includegraphics[width=2.0in]{plots/baobab_amp.jpg}
+%\caption{\small
+%Left: a prototype 1/5-scale PAPER dipole element, four of which make up a BAOBAB tile.
+%The broadband, broad-beam response patterns of these antennas are integral to the
+%removal of foregrounds to high-redshift 21cm emission.
+%Right: a prototype BAOBAB balun with Hittite HMC617LP3 LNA. The amplifier adds 
+%+30dB of gain with a quoted noise figure of 0.5 dB (35 K).
+%spatially smooth primary beam response as a function of frequency.  
+%}
+%\label{fig:element}
+%\end{figure}
+
+
+
+%\begin{figure}[!ht]\centering
+%\includegraphics[height=2.5in]{plots/balun_rx.jpg}
+%\caption{Photographs of the PAPER analog electronics that will be
+%  re-tuned for a higher operating frequency: a) the
+%  dual-polarization, low noise amplifier with its cover removed and b)
+%  the two-channel receiver in its EMC enclosure.}
+%\label{fig:balun_rx}
+%\end{figure}
+
+
+%\vspace{-.2in}
+\subsection{Digital Correlator}
+\label{sec:digital_correlator}
+%\begin{figure}[!b]\centering
+%\includegraphics[height=2.0in]{plots/rack_board.jpg}
+%\includegraphics[height=2.0in]{plots/roach_gpu_correlator.jpg}
+%\caption{\small
+%PAPER's 128-input, 100-MHz correlator, based on FPGA and GPU technology.
+%PAPER continues to develop and deploy correlators of increasing scale following the packetized 
+%frequency--cross-multiply (FX) architecture developed by CASPER \citep{parsons_et_al2008}.
+%The BAOBAB correlator will
+%combine 24 ROACH boards that have been decommissioned from the PAPER correlator
+%with 6 CPU chassis, each hosting two dual GTX590 GPU cards, to implement a 98-input,
+%400-MHz correlator capable of fully correlating both linear polarizations of the BAOBAB elements.
+%A 10-GbE switch is used to route data between boards.
+%} \label{fig:correlator}
+%\end{figure}
+
+
+%\vspace{-.2in}
+\subsection{Data Storage/Computing}
+
+
+
+%\vspace{-.2in}
+\subsection{Analysis Software}
+
+
+% --------------------------------------------------------------------------
+%\vspace{-.2in}
+\section{Data and Analysis Activities}
+\label{sec:analysis}
+
+
+
+\section{Broader Impact of Our Activities}
+\label{sec:broader_impacts}
+\section{Prior Results}
+ 
+
+% --------------------------------------------------------------------------
+% --------------------------------------------------------------------------
+% --------------------------------------------------------------------------
+
+\clearpage
+%\bibliographystyle{apj}
+%\bibliographystyle{hapj}
+%\bibliographystyle{jponew}
+%\bibliography{biblio}
+
+% --------------------------------------------------------------------------
+% --------------------------------------------------------------------------
+% --------------------------------------------------------------------------
+\singlespace
+%\section{References/Citations}
+\begin{thebibliography}{}
+%\bibitem{Andrew1966}
+%Andrew, B. H, 1966, MNRAS, 132,79-86.
+\bibitem{Bennett2003}
+Bennett, C. L. Scholarpedia; Vol. 2, Issue 10, \# 4731
+\bibitem{Bowman_Roger2010}
+Bowman, J. D.,  Rogers, A. E. E. 2010, Nature, 468, 796
+\bibitem{Burns2012}
+Burns, J. O., Lazio, J. et al. 2012,  Adv. Space Res., 49, 433?450;
+%\bibitem{Costain60}
+%Costain, C.H.: MNRAS, 120-140,(1960)
+\bibitem{DA2016}
+Datta, A. et al. ApJ, Volume 831, Issue 1, article id. 6, 16 pp. (2016)
+\bibitem{Dayton14}
+Dayton L. Jones, T. Joseph W. Lazio, Jack O. Burns
+ arXiv:1412.2096v1
+\bibitem{deBoer2016}
+deBoer, D. R, +56 co-authors; Submitted to ApJ, arXiv:1606.07473v2
+\bibitem{Ewall16}
+Ewall-Wice, A., Bradley, R., DeBoer, D., et al. 2016, ArXiv e-prints, arXiv:1602.06277
+\bibitem{Fixen_COBE}
+Fixsen, D. J.; The Astrophysical Journal, Volume 594, Issue 2, pp. L67-L70.
+\bibitem{Fur}
+Furlanetto, S. R., Oh, S. P., \& Briggs, F. H. 2006, Phys.
+%\bibitem{Fuskeland2014}
+%Fuskeland, U. et al.The ApJ, Volume 790, Issue 2, article id. 104, 10 pp. (2014).
+%\bibitem{Kohn2016}
+%Kohn S.A., et al. ApJ, Volume 823, Number 2 2016
+\bibitem{Liu13}
+Liu, A., Pritchard, J.R., Tegmark, M., \& Loeb, A. 2013
+Phys Rev D, 87, 043002
+%\bibitem{Liu14}
+%Liu, A, Parsons, A. R., Trott, C. M., Physical Review D, Volume 90, Issue 2, id.023018
+\bibitem{Madau97}
+Madau, P., Meiksin, A., \& Rees, M. J. 1997, ApJ, 475, 429
+\bibitem{Mellema2013}
+Mellema, G. et al. 2013,
+Experimental Astronomy, 36, 235
+%\bibitem{Mirocha16}
+%Mirocha, Jordan; Furlanetto, Steven R.; Sun, G.;
+%eprint arXiv:1607.00386
+\bibitem{Monsalve17}
+Monsalve, R.A., Rogers, A.E.E., Bowman, J.D., Mozdzen, T 
+ ApJ, 835:49 (13pp), 2017 
+\bibitem{Moore}
+ Moore, D.F. et al. ApJ Volume 769, Number 2 2015
+\bibitem{Morales}
+Morales, M. F., Hazelton, B., Sullivan, I., \& Beardsley, A. 2012,
+ApJ, 752, 137
+\bibitem{Mozdzen16}
+Mozdzen, T. J., Bowman, J, D., Monsalve, R.A., \& Rogers, A.E.E. 2016
+MNRAS 455, 3890-3900
+\bibitem{Parsons2010}
+Parsons, A. R., Backer, D. C., Foster, G. S., et al. 2010, AJ, 139,1468
+\bibitem{Parsons12}
+Parsons, A. R. et al. ApJ, Volume 756, Issue 2, article id. 165, 15 pp. (2012)
+\bibitem{Patra17}
+\textbf{\color{blue} Patra, N}; Parsons, Aaron R.;  DeBoer, David R.; Thyagarajan, Nithyanandan ; Ewall-Wice,Aaron; and 58 co-authors; (Under review in EXPA;  arXiv:1701.03209)
+\bibitem{Patra13}
+\textbf{\color{blue}Patra, N}; Subrahmanyan, R; Raghunathan, A; Udaya Shankar, N; Exp.\ Astron.\ 36(1--2), 319--370 (Aug 2013)
+\bibitem{Patra15a}
+\textbf{\color{blue}Patra, N}; Ph.D Thesis, Deptt. of Physics, Indian Institute of Science; Deptt of Astronomy and Astrophysics, Raman Research Institute, Bangalore, India (2015).
+\bibitem{Patra15b}
+\textbf{\color{blue}Patra, N}; Subrahmanyan, R; Sethi, S; Udaya Shankar, N; Raghunathan, A; ApJ, Volume 801, Issue 2, article id. 138, 12 pp. (2015)
+\bibitem{Patra15c}
+{\bf \color{blue}Patra, Nipanjana;}  Bray, Justin; Ekers, Ron; Roberts, Paul, Experimental Astronomy   Volume 43, Issue 2, pp 119-129. (2017)
+%\bibitem{Patra16}
+%\textbf{\color{blue}Patra,N}; Parsons, A. R; DeBoer, D. R; Thyagarajan, N; Ewall-wice, A;.. and 56 co-authors (2016). (Under review in ApJ.)
+%\bibitem{Platania1998}
+%Platania, P. et al., ApJ Volume 505, Issue 2, pp. 473-483.
+\bibitem{Presley15}
+Presley, M. E. et al. ApJ, Volume 809, Issue 1, article id. 18, 22 pp. (2015).
+%\bibitem{Pritchard10}
+%Pritchard, J; Loeb, A; Nature, Volume 468, Issue 7325, pp. 772-773 (2010). 
+\bibitem{Pritchard2012}
+Pritchard, J. R., \& Loeb, A. 2012, Reports on Progress in
+Physics, 75, 086901
+%\bibitem{Purton1966}
+%Purton, C. R, 1966, MNRAS, 133,463-474.
+\bibitem{Raghu13}
+Raghunathan, A. et al. 2013
+ITAP, vol. 61, issue 7, pp. 3411-3419
+%\bibitem{Mayuri2015}	
+%Rao et al. ApJ, Volume 810, Issue 1, article id. 3, 19 pp. (2015).
+%\bibitem{Roger2011}
+%Rogers, A. E. E. 2011, EDGES Memorandum 79; URI:
+$http://www.haystack.mit.edu/ast/arrays/Edges/EDGES_memos/079.pdf$
+\bibitem{Shaver99}
+Shaver, P. A., Windhorst, R. A., Madau, P., \& de Bruyn, A. G.
+1999, A\&A, 345, 380
+\bibitem{Singh2015}
+Singh, S., Subrahmanyan, R., Udaya Shankar, N., \& Raghunathan, A. 2015,  ApJ, 815, 88;
+%\bibitem{Slosar2016}
+%Slosar, A. 2016; arXiv:1609.08572
+\bibitem{Soko2015}
+Sokolowski, M., et al.. ,  ApJ., 813, 18, 2015
+%\bibitem{Thyagarajan1}
+%Thyagarajan, N., Udaya Shankar, N., Subrahmanyan, R., et al. 2013, ApJ, 776, 6
+%\bibitem{Thyagarajan2}
+%Thyagarajan, N., Jacobs, D. C., Bowman, J. D., et al. 2015, ApJ, 804, 14
+\bibitem{Thyagarajan3}
+Thyagarajan, Nithyanandan; Parsons, Aaron R.; DeBoer, David R.; Bowman, Judd D.; Ewall-Wice, Aaron M.; Neben, Abraham R.; {\bf \color{blue}Patra, Nipanjana}; The Astrophysical Journal, Volume 825, Issue 1, article id. 9, 11 pp. (2016)
+\bibitem{Tingay_MWA}
+Tingay, S. J., Goeke, R., Bowman, J. D., et al. 2013, , 30, e007
+%\bibitem{Trott}
+%Trott, C. M., Wayth, R. B., \& Tingay, S. J. 2012, ApJ, 757, 101
+\bibitem{Van2015}
+van Haarlem, M. P., Wise, M. W., Gunst, A. W., et al. 2013,
+A\&A, 556, A2
+%\bibitem{Vedantham1}
+%Vedantham, H., Udaya Shankar, N., \& Subrahmanyan, R. 2012,
+%ApJ, 745, 176
+\bibitem{Vedantham2015}
+%\bibitem{vedantham_et_al2015}
+Vedantham, H. K.; Koopmans, L. V. E.; de Bruyn, A. G. et al.;Monthly Notices of the Royal Astronomical Society, Volume 450, Issue 3, p.2291-2305
+\bibitem{Voytek2015}
+Voytek, T. C. 2015, PhD thesis, Carnegie Mellon University
+
+
+
+%\ref{Platania1998}; \cite{Bennett2003}; \cite{Fuskeland2014}
+
+\end{thebibliography}
+
+%\bibliographystyle{apj}
+%\bibliography{Reference}{}
+\end{document}
