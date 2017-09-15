@@ -75,10 +75,6 @@ The hardware requirement of monopole experiments is simple and a detection is po
 control over systematic required is incredibly high for a successful detection using a total power radio telescope.
 First generation monopole experiments EDGES \cite{Bowman_Roger2010}), SARAS; \cite{Patra13}, \cite{Patra15b} , SCI-HI (\cite{Voytek2015}) used single element radiometers and produced a wealth of knowledge about the measurement technique and calibration strategy. The nonstandard effects that impact the possibility of a detection are studied in great detail. For example, angular structures of the foreground can be coupled into wideband measurements due to chromatic antenna beam and introduce spectral variation. Uncalibrated receiver or sky noise contribution at $0.1\%$ level can result in residual spectral distortion which is few orders of magnitude brighter than the cosmological signal. 
 
-We take an interferometric approach to measure the redshifted 21~cm monopole background
-
-The instrument constitute of 10 short dipole elements that are ultrawideband and spatially smooth primary beam with nominal spectral variation.
-
 \begin{figure}[!ht]
 \centering
 \includegraphics[height=2.5in]{Figures/Figure1.png}
@@ -87,34 +83,8 @@ HYPERION stage1: An interferometer with a baseline length $< \lambda/2$ with ele
 }
 \label{figure3}
 \end{figure}
-
-
-First generation monopole experiments EDGES \cite{Bowman_Roger2010}), SARAS; \cite{Patra13}, \cite{Patra15b} , SCI-HI (\cite{Voytek2015}) produced a wealth of knowledge about the measurement technique and calibration strategy. The nonstandard effects that impact the possibility of a detection is studied in great detail. For example, angular structures of the foreground can be coupled into wideband measurements due to chromatic antenna beam and introduce spectral variation. 
-Preserving the monopole signal structure will require a beam variation as low as $0.04/ MHz$
- \cite{Mozdzen16}. 
-
-A pathfinder design of a frequency independent short dipole (SARAS antenna,  87.5 to 175~MHz) is presented in \cite{Raghu13}. The scaled optimization of this is adopted for HYPERION array which is also frequency independent between 30 - 120~MHz. Uncalibrated receiver or sky noise contribution at $0.1\%$ level can result in residual spectral distortion which is few orders of magnitude brighter than the cosmological signal. 
-The complexity of calibrating monopole measurements for multiple reflections of the receiver and sky noise internal to the system is presented with unprecedented details in \href{http://link.springer.com/article/10.1007\%2Fs10686-013-9336-3}{Patra et al.2013 \cite{Patra13}}, \href{http://www.worldcat.org/title/precision-measurements-of-the-radio-background-at-long-wavelengths-a-thesis-submitted-for-the-degree-of-doctor-of-philosophy/oclc/918897862}{Patra et al.2015b \cite{Patra15b}} .\cite{Monsalve17} presented the precision calibration methodology developed for the EDGES high band receiver that reduces the system noise contribution to mili kelvin level where the cosmological signal can be detectable. Early observations of EDGES showed that the reionization of the cosmological neutral hydrogen occurred over $\Delta z >0.06$ \cite{Bowman_Roger2010}. 
-
-
-
-
-
-
-
- Although interferometers are immune to systematic effects, power spectrum measurements are dominated by the foreground at various spatial scales (figure \ref{Fig:3}). 
-The avoidance based foreground removal technique is documented in \cite{Parsons2010} (figure \ref{Fig:3}).
-Multipath effects replicates the sky signal at the delays where foreground power spectrum is expected to be negligible. 
-In a related series of 4 papers the effect of the element chromaticity of a HERA prototype element on the power spectrum measurements using single polarization is studied  \cite{Thyagarajan3, deBoer2016, Ewall16}. Effects of multiple reflections from the feed nearfield on the chromaticity of the single polarization of a prototype HERA element is measured using reflectometry technique in  \href{https://arxiv.org/pdf/1701.03209.pdf}{Patra et al.2017b \cite{Patra17}}. \cite{Moore} has shown the effects of polarization leakage on the power spectrum measurements due to beam asymmetry using the PAPER dipole antenna beam as an example. 
- The proposed work investigate the effects of the polarization leakage due to multiple reflections in the reflector type antennas and its science impact. All these studies together constitute an exhaustive understanding of the mechanism by which foreground power can contaminate the cosmological 21~cm power spectrum measurement and help improve the design parameters, calibration strategy and data analysis pipeline.
-
-
-
-
-
-
-
- Although response of interferometers to an isotropic signal integrates to zero when configured conventionally for radio imaging or spatial fluctuation measurements, it can be sensitive to the spatial monopole if a known spatial variation is introduced in the monopole background. (Ref: Harish LOFAR, Shaver et al). We use electromagnetic absorber baffles around individual interferometer elements. Absorber baffles are thermal emitters at ambient temperature that partially covers the antenna beams while creating a artificial discontinuity on the monopole sky and provide a reference temperature which is colder than the sky monopole at the observing frequencies 50-120~MHz. At these frequencies, the redshifted 21~cm signal is expected to have the spectral fluctuation that is cosmologically most significant and 
+We take an interferometric approach to measure the sky monopole background temperature spectrum with respect to a thermal reference.
+Although response of interferometers to an isotropic signal integrates to zero when configured conventionally for radio imaging or spatial fluctuation measurements, it can be sensitive to the spatial monopole if a known spatial variation is introduced in the monopole background. (Ref: Harish LOFAR, Shaver et al). We use electromagnetic absorber baffles around individual interferometer elements. Absorber baffles are thermal emitters at ambient temperature that partially covers the antenna beams while creating a artificial discontinuity on the monopole sky and provide a reference temperature which is colder than the sky monopole at the observing frequencies 50-120~MHz. At these frequencies, the redshifted 21~cm signal is expected to have the spectral fluctuation that is cosmologically most significant (reference).
 
 HYPERION exploits the antenna element design of the ``Shaped Antenna measurements of the background RAdio Spectrum" (SARAS; ) with by further optimization for low frequency performance alongside a custom designed wideband analog receiver system and a digital spectrometer that is realized using the Smart Network ADC Processor (SNAP).   
 
@@ -234,7 +204,7 @@ Receiver Noise Temperature & 150 K \\
 %Baseline & 60 m\\
 %Redundant Baseline Scale & 1.6 m\\
 %$k_{\rm min}$, $k_{\rm max}$ & 0.025, 2.5$h\ {\rm Mpc}^{-1}$\\ 
-Array Configuration & Reconfigurable: very short baseline ($<\lambda/2$) (Figure \ref{fig:configuration})\\
+Array Configuration & Reconfigurable: very short baseline ($<\lambda/2$ at 150~MHz)\\
 Frequency Resolution & 87.9 kHz\\
 Single spectrum Integration Time & 4 s\\
 Data Volume & 45 GB per night \\
@@ -243,7 +213,18 @@ Data Volume & 45 GB per night \\
 \label{tab:features}
 \end{table}
 
-
+ \begin{figure}
+ \begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\linewidth]{Figures/Antenna.jpg}
+\end{minipage}
+ \begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\linewidth]{Figures/Analog.png}
+\end{minipage}
+\caption{\footnotesize{Left: Dynamic range of foreground mitigation for redshifted 21~cm monopole measurements - Galactic and extragalactic radio background at low radio frequencies. The redshifted 21~cm emission/absorption signal amplitude against CMB is shown in green. Additional contribution arises due to thermal emission of the moon as well as galactic free free emission. At these frequencies, any residual receiver noise that is uncalibrated at even $1\%$ level can result in additive contamination that is at least five orders of magnitude larger than the cosmological 21~cm signal. Right: Dynamic range of foreground reduction for EoR power spectrum measurement: For a successful detection, the smooth spectrum foreground power needs to be attenuated with respect to EoR by the amount shown in grey. Smaller values of $k_{\parallel}$ represents larger spatial scales limiting case of which is the monopole signal. Hence, higher attenuation of the foreground power is needed to detect the EoR signal at larger spatial scales i.e smaller values of $k_{\parallel}$.}}
+\label{Fig:6}
+\end{figure} 
 
 %\begin{figure}[!t]\centering
    % \includegraphics[width=6.0in]{plots/timeline.png}
@@ -271,6 +252,8 @@ Data Volume & 45 GB per night \\
 %\vspace{-.2in}
 \subsection{Analog Signal Path}
 \label{sec:analog_path}
+
+
 
 %\begin{figure}[!ht]\centering
 %\includegraphics[width=4.5in]{plots/signal_flow.png}
